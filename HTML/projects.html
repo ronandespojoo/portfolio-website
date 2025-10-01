@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronan Despojo | Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lexend:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+  <!-- Stars -->
+  <div class="stars" id="stars"></div>
+
+  <!-- Navbar -->
+  <nav>
+  <div class="logo">
+    <img src="images/pictures/rocket.png" alt="ROCKET">
+    <h1>Ronan Rawnsle Despojo</h1>
+  </div>    
+  <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>My <span>Projects</span></h2>
+    <p>Here are some of the projects I’ve led and made contributions to, from my work in development to project management.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="project-container">
+      <div class="project-card">
+        <h3>MISAyang Samahan</h3>
+        <p><strong>Project Manager</strong> | September 2025</p>
+        <p>Spearheaded the design, development, and documentation of the web application while coordinating closely with HR and the Executive Board to ensure seamless communication and project success.</p>
+      </div>
+      <div class="project-card">
+        <h3>TALAB Website</h3>
+        <p><strong>Backend Developer</strong> | Sept – Oct 2025</p>
+        <p>Developed secure backend systems for Ateneo’s TALAB website, which served thousands of students simultaneously during official academic events.</p>
+      </div>
+        <div class="project-card">
+        <h3>Cybersecurity Competition CyFr Website</h3>
+        <p><strong>Developer</strong> | September - October 2025</p>
+        <p>Developed 
+          challenging cybersecurity, cipher, and boolean algebra puzzles for participants
+          to solve. 
+        </p>
+        <p>Developed frontend of website.</p>
+      </div>
+      <div class="project-card">
+        <h3>Chatbot Development @ Google Developers Groups (Loyola)</h3>
+        <p><strong>IT Product Development Leader</strong> | August 2025 - Present </p>
+        <p>Served as backend developer.</p>
+        <p>Developed APIs with Google and Discord products. Integrated schema and models with PostgreSQL.</p>
+      </div>
+      <div class="project-card">
+        <h3>Arduino Robotics Workshop</h3>
+        <p><strong>Project Manager</strong> | April – May 2025</p>
+        <p>Oversaw logistics and procurement of robotics components, ensuring smooth workshop execution and a meaningful hands-on experience for participants.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><i><b>Inspired by a future in the stars.</b></i></p>
+  </footer>
+
+  <!-- Stars Script -->
+  <script>
+    const starsContainer = document.getElementById("stars");
+    for (let i = 0; i < 120; i++) {
+      const star = document.createElement("div");
+      star.classList.add("star");
+      star.style.top = Math.random() * 100 + "%";
+      star.style.left = Math.random() * 100 + "%";
+      star.style.animationDuration = (Math.random() * 3 + 2) + "s";
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>
